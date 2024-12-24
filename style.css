@@ -3,23 +3,28 @@
     padding: 0px;
     font-family: 'Courier New', Courier, monospace;
 }
+
 body{
     background-color: #1A1A1B;
 }
+
 p{
     color: white;
     font-size: 22px;
     font-weight: bold;
     padding-right: 0.3px;
 }
+
 .pracket{
     width: 30px;
     height: 60px;
 }
+
 .pracketClose{
     width: 30px;
     height: 60px;
 }
+
 .container{
    width: 240px;
    margin: 0 auto;
@@ -32,6 +37,7 @@ p{
     height: 110px;
     background-color: #333F44;
 }
+
 .screen1{
     display: flex;
     justify-content: flex-end;
@@ -54,6 +60,7 @@ p{
     background-color: #333F44;
     overflow: hidden;
 }
+
 .screen2>p{
     padding-top: 15px;
 }
@@ -62,6 +69,7 @@ p{
     width: 60px;
     height: 60px;
 }
+
 .delete{
     width: 60px;
     height: 60px;
