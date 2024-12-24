@@ -1,65 +1,86 @@
 *{
     margin: 0px;
     padding: 0px;
+    font-family: 'Courier New', Courier, monospace;
 }
 body{
     background-color: #1A1A1B;
 }
 p{
-    direction: rtl;
     color: white;
     font-size: 22px;
     font-weight: bold;
+    padding-right: 0.3px;
 }
-
+.pracket{
+    width: 30px;
+    height: 60px;
+}
+.pracketClose{
+    width: 30px;
+    height: 60px;
+}
 .container{
-   width: 280px;
+   width: 240px;
    margin: 0 auto;
-   margin-top: 20px;
+   margin-top: 10px;
    border: 2px solid black;
 }
 
 .screen{
-    width: 280px;
+    width: 240px;
     height: 110px;
     background-color: #333F44;
 }
 .screen1{
-    width: 280px;
+    display: flex;
+    justify-content: flex-end;
+    width: 240px;
     height: 40px;
     background-color: #333F44;
+    overflow: hidden;
+}
+
+.screen1>p{
+    padding-top: 10px;
+    font-size: 18px;
 }
 
 .screen2{
-    width: 280px;
+    display: flex;
+    justify-content: flex-end;
+    max-width: 240px;
     height: 70px;
     background-color: #333F44;
+    overflow: hidden;
 }
-.row1{
-    display: flex;
+.screen2>p{
+    padding-top: 15px;
 }
-.row2{
-    display: flex;
+
+.clear{
+    width: 60px;
+    height: 60px;
 }
-.row3{
-    display: flex;
+.delete{
+    width: 60px;
+    height: 60px;
 }
-.row4{
-    display: flex;
-}
-.row5{
+
+.row{
     display: flex;
 }
 
 button{
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: 60px;
     background-color: #37AA9C;
     color: white;
     font-size: 20px;
+    cursor:pointer;
 }
 
 button:hover{
-    background-color:#94F3E4;
+    background-color:#73daca;
     font-size: 26px;
 }
