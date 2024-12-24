@@ -25,7 +25,7 @@ let y = 0;
 let opr="";
 let res= "";
 
-const audio = new Audio("./audio/2.5.mp3");
+const audio = new Audio("./audio/2.mp3");
 const buttons = document.querySelectorAll("button");
 buttons.forEach(button => {
   button.addEventListener("click", () => {
