@@ -15,16 +15,6 @@ p{
     padding-right: 0.3px;
 }
 
-.pracket{
-    width: 30px;
-    height: 60px;
-}
-
-.pracketClose{
-    width: 30px;
-    height: 60px;
-}
-
 .container{
    width: 240px;
    margin: 0 auto;
@@ -32,37 +22,17 @@ p{
    border: 2px solid black;
 }
 
-.screen{
-    width: 240px;
-    height: 110px;
-    background-color: #333F44;
-}
-
-.screen1{
-    display: flex;
-    justify-content: flex-end;
-    width: 240px;
-    height: 40px;
-    background-color: #333F44;
-    overflow: hidden;
-}
-
-.screen1>p{
-    padding-top: 10px;
-    font-size: 18px;
-}
-
 .screen2{
     display: flex;
     justify-content: flex-end;
     max-width: 240px;
-    height: 70px;
+    height: 110px;
     background-color: #333F44;
     overflow: hidden;
 }
 
 .screen2>p{
-    padding-top: 15px;
+    padding-top: 40px;
 }
 
 .clear{

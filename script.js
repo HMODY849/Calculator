@@ -20,191 +20,118 @@ const dot = document.querySelector(".dot");
 const equal = document.querySelector(".equal");
 const screen2 = document.querySelector(".screen2");
 const screen1 = document.querySelector(".screen1");
+const num = document.getElementById("num");
+const op = document.getElementById("op");
+const num2 = document.getElementById("num2");
 let x =""
 let y = 0;
 let opr="";
 let res= "";
-
-const audio = new Audio("./audio/2.mp3");
-const buttons = document.querySelectorAll("button");
-buttons.forEach(button => {
-  button.addEventListener("click", () => {
-    audio.play();
-  });
-});
+// have to edit the sound effect
+// const audio = new Audio("./audio/2.mp3");
+// const buttons = document.querySelectorAll("button");
+// buttons.forEach(button => {
+//   button.addEventListener("click", () => {
+//     audio.play();
+//   });
+// });
 
 zero.addEventListener("click", function(){
-    let zero = document.createElement("p");
-    zero.textContent="0";
-    screen2.appendChild(zero);
-    let zero1 = document.createElement("p")
-    zero1.textContent="0";
-    screen1.appendChild(zero1);
     x += "0";
+    num.innerHTML= x;
 })
 
 one.addEventListener("click", function(){
-    let one = document.createElement("p");
-    one.textContent="1";
-    screen2.appendChild(one);
-    let one1 = document.createElement("p")
-    one1.textContent="1";
-    screen1.appendChild(one1);
     x += "1";
+    num.innerHTML= x;
 })
 
 two.addEventListener("click", function(){
-    let two = document.createElement("p");
-    two.textContent="2";
-    screen2.appendChild(two);
-    let two1 = document.createElement("p")
-    two1.textContent="2";
-    screen1.appendChild(two1);
     x += "2";
+    num.innerHTML= x;
 })
 
 three.addEventListener("click", function(){
-    let three = document.createElement("p");
-    three.textContent="3";
-    screen2.appendChild(three);
-    let three1 = document.createElement("p")
-    three1.textContent="3";
-    screen1.appendChild(three1);
     x += "3";
+    num.innerHTML= x;
 })
 
 four.addEventListener("click", function(){
-    let four = document.createElement("p");
-    four.textContent="4";
-    screen2.appendChild(four);
-    let four1 = document.createElement("p")
-    four1.textContent="4";
-    screen1.appendChild(four1);
     x+="4";
+    num.innerHTML= x;
 })
 
 five.addEventListener("click", function(){
-    let five = document.createElement("p");
-    five.textContent="5";
-    screen2.appendChild(five);
-    let five1 = document.createElement("p")
-    five1.textContent="5";
-    screen1.appendChild(five1); 
     x += "5";
+    num.innerHTML= x;
 })
 
 six.addEventListener("click", function(){
-    let six = document.createElement("p");
-    six.textContent="6";
-    screen2.appendChild(six);
-    let six1 = document.createElement("p")
-    six1.textContent="6";
-    screen1.appendChild(six1);
     x += "6";
+    num.innerHTML= x;
 })
 
 seven.addEventListener("click",function(){
-    let seven = document.createElement("p");
-    seven.textContent="7";
-    screen2.appendChild(seven);
-    let seven1 = document.createElement("p")
-    seven1.textContent="7";
-    screen1.appendChild(seven1);
     x += "7";
+    num.innerHTML= x;
 })
 
 eigth.addEventListener("click",function(){
-    let eigth = document.createElement("p");
-    eigth.textContent="8";
-    screen2.appendChild(eigth);
-    let eigth1 = document.createElement("p")
-    eigth1.textContent="8";
-    screen1.appendChild(eigth1);
     x += "8";
+    num.innerHTML= x;
 })
 
 nine.addEventListener("click", function(){
-    let nine = document.createElement("p");
-    nine.textContent="9";
-    screen2.appendChild(nine);
-    let nine1 = document.createElement("p")
-    nine1.textContent="9";
-    screen1.appendChild(nine1);
     x += "9";
+    num.innerHTML= x;
 })
 
 
 divide.addEventListener("click", function(){
-    let divide = document.createElement("p");
-    divide.textContent="÷";
-    screen2.appendChild(divide);
-    let divide1 = document.createElement("p")
-    divide1.textContent="÷";
-    screen1.appendChild(divide1);
-    screen2.innerHTML=``
     y = Number(x);
     x = "";
     opr = "/"
+    op.innerHTML=`÷`
+   num.innerHTML=``
+   num2.innerHTML=y;
 })
 
 multiply.addEventListener("click", function(){
-    let multiply = document.createElement("p");
-    multiply.textContent="x";
-    screen2.appendChild(multiply);
-    let multiply1 = document.createElement("p")
-    multiply1.textContent="x";
-    screen1.appendChild(multiply1);
-    screen2.innerHTML=``
     y = Number(x);
     x = "";
     opr = "*"
+    op.innerHTML=`x`
+    num.innerHTML=``
+    num2.innerHTML=y;
 })
 
 minus.addEventListener("click", function(){
-    let minus = document.createElement("p");
-    minus.textContent="-";
-    screen2.appendChild(minus);
-    let minus1 = document.createElement("p")
-    minus1.textContent="-";
-    screen1.appendChild(minus1);
-    screen2.innerHTML=``
     y = Number(x);
     x = "";
     opr = "-"
+    op.innerHTML=`-`
+    num.innerHTML=``
+   num2.innerHTML=y;
 })
 
 plus.addEventListener("click", function(){
-    let plus = document.createElement("p");
-    plus.textContent="+";
-    screen2.appendChild(plus);
-    let plus1 = document.createElement("p")
-    plus1.textContent="+";
-    screen1.appendChild(plus1);
-    screen2.innerHTML=``
     y = Number(x);
     x = "";
     opr = "+"
+    num.innerHTML=``
+    num2.innerHTML=y;
+    op.innerHTML=`+`;
 })
 
 function showResult (){
-    screen2.innerHTML=``;
     x = res;
-    let m = document.createElement("p")
-        m.innerHTML=`${res}`;
-        screen2.appendChild(m);
-    let r = document.createElement("p")
-        r.innerHTML=`${res}`;
-        screen1.appendChild(r);
+        num.innerHTML=res
+        num2.innerHTML=``;
+        op.innerHTML=``;
+
 }
 equal.addEventListener("click", function(){
-    let equal = document.createElement("p");
-    equal.textContent="=";
-    screen2.appendChild(equal);
-    let equal1 = document.createElement("p");
-    equal1.textContent="=";
-    screen1.appendChild(equal1);
-    screen1.innerHTML=``;
-    x =+x
+    x = Number(x)
     if(opr==="+"){
         res = y + x
         showResult();
@@ -217,36 +144,62 @@ equal.addEventListener("click", function(){
         res = y*x;
         showResult();
         return res;
-    }else if(opr ==="/"){;
-        res = y/x;
+    }else if(opr ==="/"){
+        if (x==0){
+            res = "ERROR!"
+            showResult();
+            return  res
+        }else{
+            res = y/x;
+            showResult();
+             return res
+        }
+    }else if(opr==="%"){
+        res = x/100;
+        op.innerHTML=``
         showResult();
-         return res
-    }
+        return res
+    }   
 })
 
 
 deleteButton.addEventListener("click", function(){
-    screen1.removeChild(screen1.lastChild);
-    screen2.removeChild(screen2.lastChild);
-    x=x.slice(0,(x.length)-1);
+    if (res==="ERROR!"){
+        x="";
+        y=0;
+        res="";
+        num.innerHTML=``;
+        op.innerHTML=``;
+        num2.innerHTML=``;
+    }else{
+        x= String(x);
+        x=x.slice(0,(x.length)-1) ;
+        res =x;
+        num.innerHTML=x
+    }
+   
 })
 
 clear.addEventListener("click", function(){
-    screen2.innerHTML=``;
-    screen1.innerHTML=``;
     x="";
     y=0;
     res="";
+    num.innerHTML=``;
+    num2.innerHTML=``;
+    op.innerHTML=``;
 })
 
 persanteg.addEventListener("click", function(){
-    let persanteg = document.createElement("p");
-    persanteg.textContent="%";
-    screen2.appendChild(persanteg);
+    opr="%";
+    op.innerHTML=`%`
 })
 
 dot.addEventListener("click", function(){
-    let dot = document.createElement("p");
-    dot.textContent=".";
-    screen2.appendChild(dot);
+    x+="."
+    num.innerHTML=x
+})
+
+p_m.addEventListener("click", function(){
+    x += "-"
+    num.innerHTML=x
 })
