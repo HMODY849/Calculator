@@ -28,13 +28,13 @@ let y = 0;
 let opr="";
 let res= "";
 // have to edit the sound effect
-// const audio = new Audio("./audio/2.mp3");
-// const buttons = document.querySelectorAll("button");
-// buttons.forEach(button => {
-//   button.addEventListener("click", () => {
-//     audio.play();
-//   });
-// });
+const audio = new Audio("./audio/2.mp3");
+const buttons = document.querySelectorAll("button");
+buttons.forEach(button => {
+  button.addEventListener("click", () => {
+    audio.play();
+  });
+});
 
 zero.addEventListener("click", function(){
     x += "0";
