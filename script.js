@@ -151,6 +151,7 @@ equal.addEventListener("click", function(){
             return  res
         }else{
             res = y/x;
+            res= Math.round(res*1000)/1000;
             showResult();
              return res;
         }
