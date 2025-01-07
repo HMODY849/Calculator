@@ -8,6 +8,35 @@ body{
     background-color: #1A1A1B;
 }
 
+.clear{
+    background-color: rgb(255, 140, 0);
+}
+.clear:hover{
+    background-color: rgb(255, 140, 0);
+}
+
+/* .equal{
+    background-color: rgb(255, 140, 0);
+} */
+/* .plus{
+    background-color: rgb(255, 140, 0);
+}
+.minus{
+    background-color: rgb(255, 140, 0);
+}
+.multiply{
+    background-color: rgb(255, 140, 0);
+}
+.divide{
+    background-color: rgb(255, 140, 0);
+}
+.persanteg{
+    background-color: rgb(255, 140, 0);
+}
+.delete{
+    background-color: rgb(255, 140, 0);
+} */
+
 p{
     color: white;
     font-size: 22px;
@@ -28,7 +57,6 @@ p{
     max-width: 240px;
     height: 110px;
     background-color: #333F44;
-    overflow: hidden;
 }
 
 .screen2>p{

@@ -125,7 +125,7 @@ plus.addEventListener("click", function(){
 
 function showResult (){
     x = res;
-        num.innerHTML=res
+        num.innerHTML=Math.round(res*1000)/1000;
         num2.innerHTML=``;
         op.innerHTML=``;
 
@@ -152,7 +152,7 @@ equal.addEventListener("click", function(){
         }else{
             res = y/x;
             showResult();
-             return res
+             return res;
         }
     }else if(opr==="%"){
         res = x/100;
